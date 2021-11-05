@@ -17,23 +17,32 @@
   <div class="container">
     
     <center>
-
+<h3 class="btn btn-success heading">Image Recognition</h3>
       <br><br>
 
-      <p style="font-size: 22px;">Model is trained to identify the following objects: </p>
-
+      <p style="font-size: 25px;background-color: aliceblue;">Model is trained to identify the following objects: <br>
+<b class="name_of_objects">bottle | book | cube | mouse | remote</b> </p>
+<br> <br>
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
       <label>Webcam View - </label>
-
+<div id="camera"></div>
       <br><br>
-
+<button class="btn btn-danger" onclick="take_snapshot()">Capture Image</button>
       <br><br>
-
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+  <label>Snapshot View - </label>
+  <div id="result"></div>
       <br><br>
-
+      <button class="btn btn-info" onclick="check()">Identify Image</button>
       <br><br>
-
-      <p style="font-size: 22px;">Object :  </p>
-      <p style="font-size: 22px;">Accuracy :  </p>
+      </div>
+    <center>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+      <p style="font-size: 22px;">Object :<span id="result_object_name"></span>  </p>
+      <p style="font-size: 22px;">Accuracy :<span id="result_object_accuracy"></span>  </p>
+    </div>
+    </center>
     </center>
 
   </div>

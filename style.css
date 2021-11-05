@@ -1,0 +1,21 @@
+body{
+    background-color: lawngreen;
+    color: orange;
+}
+.heading{
+    font-size: 30px;
+    width: 100%;
+}
+#camera,#result{
+    border: 2px solid orange;
+    width: 350px;
+    height: 350px;
+}
+.name_of_objects{color: red !important; 
+background-color: bisque;
+
+border-radius: 20px;}
+#result_object_name,#result_object_accuracy{
+    font: size 20px;
+color: black;
+background-color: blanchedalmond;}
